@@ -40,8 +40,8 @@ class DropTarget extends React.Component {
       },
     );
     e.containerElem.dispatchEvent(evt);
-    this.props.onHit(e);
     this.setState({highlighted: false})
+    this.props.onHit(e);
   }
 
   handleDragEnter = (e) => {
